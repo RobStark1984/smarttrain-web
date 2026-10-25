@@ -1,0 +1,29 @@
+/* Estilos personalizados y ajustes adicionales para SmartTrain Web */
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+/* Efectos de transición suaves para elementos interactivos */
+table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+/* Scrollbar personalizado para tablas en dispositivos pequeños */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
