@@ -1,0 +1,50 @@
+/* Estilos personalizados y ajustes responsivos para SmartTrain Web */
+body {
+    background-color: #0f172a;
+    color: #f8fafc;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Ocultar scrollbar en la barra de navegación móvil manteniendo el desplazamiento táctil */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Efectos de transición suaves */
+table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+/* Scrollbar personalizado para escritorio */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #64748b;
+}
+
+/* Estilos de impresión para Reportes PDF (PBI-05) */
+@media print {
+    header, footer, #operator-form, button, #toast-container {
+        display: none !important;
+    }
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+}
